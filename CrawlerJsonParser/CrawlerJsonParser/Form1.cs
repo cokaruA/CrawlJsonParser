@@ -47,8 +47,8 @@ namespace CrawlerJsonParser
                 }
                 else
                 {
-                    string msg = string.Format("id: {0}, key: {1} is not found on source file.", jsonObj["_id"], _key );
-                    AddLogOnListBox("[Src Data:Warnning]", msg);
+                    //string msg = string.Format("id: {0}, key: {1} is not found on source file.", jsonObj["_id"], _key );
+                    //AddLogOnListBox("[Src Data:Warnning]", msg);
                 }
             }
 

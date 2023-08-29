@@ -25,18 +25,23 @@ namespace CrawlerJsonParser
             foreach (string _key in Enum.GetNames(typeof(SpinDataKey)))
             {                
                 string value = datum[_key];
-                if(IsMergeNumbers(_key))
+                if (IsMergeNumbers(_key))
                 {
-                    value = Filter(value, charsToRemove,string.Empty);
+                    value = Filter(value, charsToRemove, string.Empty);
                 }
-                else if(IsLinePayData(_key))
+                else if (IsLinePayData(_key))
+                {
+                    string newValue = " | ";
+                    value = Filter(value, charsToRemove, newValue);
+                }
+                else if (IsSlm(_key))
                 {
                     string newValue = " | ";
                     value = Filter(value, charsToRemove, newValue);
                 }
 
                 sb.Append(value);
-                if(_key.CompareTo("w") !=0 )
+                if(_key.CompareTo("fsmore") !=0 )
                 {
                     sb.Append(',');
                 }
@@ -50,7 +55,12 @@ namespace CrawlerJsonParser
         {
             if(key.CompareTo("balance") == 0 ||
                key.CompareTo("balance_bonus") ==0 ||
-               key.CompareTo("balance_cash") == 0)
+               key.CompareTo("balance_cash") == 0 ||
+               key.CompareTo("fswin") == 0 ||
+               key.CompareTo("fsres") == 0 ||
+               key.CompareTo("fsres_total") == 0 ||
+               key.CompareTo("fswin_total") == 0
+               )
             {
                 return true;
             }
@@ -61,6 +71,20 @@ namespace CrawlerJsonParser
         private bool IsLinePayData(string key)
         {
             if (key.CompareTo("linepay") == 0 )
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        private bool IsSlm(string key)
+        {
+            if (key.CompareTo("slm_mp") == 0 ||
+                key.CompareTo("slm_mv") == 0 ||
+                key.CompareTo("slm_lmi") == 0 ||
+                key.CompareTo("slm_lmv") == 0
+                )
             {
                 return true;
             }

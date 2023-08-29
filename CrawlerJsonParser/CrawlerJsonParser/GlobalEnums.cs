@@ -11,6 +11,7 @@ namespace CrawlerJsonParser
         _id,
         index,
 
+        w,
         tw,
                 
         reel_set,
@@ -35,9 +36,28 @@ namespace CrawlerJsonParser
         
         I,
         s,
-        w
-        //uuid,
+
+        fs,
+        fswin,
         
+        fsmax,
+        fsmul,
+        fsres,
+
+        slm_mp,
+        slm_mv,
+        slm_lmi,
+        slm_lmv,
+
+        fs_total,
+        fsmul_total,
+        fsres_total,
+        fswin_total,
+        fsmore
+
+
+        //uuid,
+
     };
 
 
