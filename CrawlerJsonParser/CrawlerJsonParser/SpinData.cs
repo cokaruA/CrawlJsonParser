@@ -59,7 +59,9 @@ namespace CrawlerJsonParser
                key.CompareTo("fswin") == 0 ||
                key.CompareTo("fsres") == 0 ||
                key.CompareTo("fsres_total") == 0 ||
-               key.CompareTo("fswin_total") == 0
+               key.CompareTo("fswin_total") == 0 ||
+               key.CompareTo("tw") == 0 ||
+               key.CompareTo("w") == 0
                )
             {
                 return true;
