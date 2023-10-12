@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace CrawlerJsonParser
 {
+
+    //sr
     public enum SpinDataKey
     {// Do Not Change Order 
         _id,
@@ -35,6 +37,8 @@ namespace CrawlerJsonParser
         counter,
         
         I,
+        l0, //
+        l1, // 
         s,
 
         fs,
@@ -44,16 +48,18 @@ namespace CrawlerJsonParser
         fsmul,
         fsres,
 
+        sr, // 
         slm_mp,
         slm_mv,
         slm_lmi,
         slm_lmv,
 
         fs_total,
+        fsend_total, // 
         fsmul_total,
         fsres_total,
         fswin_total,
-        fsmore
+        
 
 
         //uuid,

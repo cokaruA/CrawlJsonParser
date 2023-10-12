@@ -176,5 +176,10 @@ namespace CrawlerJsonParser
             string logMessage = string.Format("{0} : {1}", desc, message);
             this.ResultListBox.Items.Add(logMessage);
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

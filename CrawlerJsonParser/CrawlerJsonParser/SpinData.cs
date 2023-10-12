@@ -85,7 +85,8 @@ namespace CrawlerJsonParser
             if (key.CompareTo("slm_mp") == 0 ||
                 key.CompareTo("slm_mv") == 0 ||
                 key.CompareTo("slm_lmi") == 0 ||
-                key.CompareTo("slm_lmv") == 0
+                key.CompareTo("slm_lmv") == 0 ||
+                key.CompareTo("sr") == 0
                 )
             {
                 return true;
