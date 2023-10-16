@@ -7,60 +7,66 @@ using System.Threading.Tasks;
 namespace CrawlerJsonParser
 {
     public enum SpinDataKey
-    {// Do Not Change Order 
+    {// Do Not Change Order  - Chilli Heat
         _id,
         index,
-
-        w,
-        tw,
                 
-        reel_set,
+        //reel_set,
 
         balance,
-        balance_cash,
         balance_bonus,
-        
-        na,
-        linepay,
-        
-        //stime,
-        
-        sa,
-        sb,
-        sh,
-        
+        balance_cash,
+
+        bl,
         c,
-        sver,
-        
         counter,
-        
+
+        g,
+
         I,
+        l0,
+        l1,
+        l2,
+        l3,
+        l4,
+        l5,
+
+        linepay,
+        na,
+
+        rs,
+        rs_c,
+        rs_m,
+        rs_p,
+
         s,
+        sh,
+        st,
+        sver,
 
-        fs,
-        fswin,
-        
-        fsmax,
-        fsmul,
-        fsres,
-
-        slm_mp,
-        slm_mv,
-        slm_lmi,
-        slm_lmv,
-
-        fs_total,
-        fsmul_total,
-        fsres_total,
-        fswin_total,
-        fsmore
-
-
-        //uuid,
-
+        mo,
+        mo_t,
+        tmb_res,
+        tmb_win,
+        tw,
+        w,                          
     };
 
 
+    public enum ReelDataSet
+    {
+        reg,
+        top,
+    };
 
-
+    public enum ReelDataKey
+    {
+        reel_set,
+        s,
+        sa,
+        sb,
+        sh,
+        st,
+        sw
+    };
 }

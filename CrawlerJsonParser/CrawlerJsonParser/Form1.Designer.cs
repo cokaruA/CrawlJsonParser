@@ -114,7 +114,7 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Crawl Json Parser";
+            this.Text = "[Chilli Heat]Crawl Json Parser";
             this.ResumeLayout(false);
             this.PerformLayout();
 
